@@ -2,7 +2,7 @@
 import openai
 
 # gets API Key from environment variable OPENAI_API_KEY
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI()
 
 assistant = client.beta.assistants.create(
     name="Math Tutor",
